@@ -1,42 +1,67 @@
+@import play.mvc.Http.Request
+@import helper._
+@(loginForm: Form[models.Login])(implicit request: Request, messages: play.i18n.Messages)
+
 @main("Login") {
-<!DOCTYPE html>
-<html>
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght400;700&display=swap" rel="stylesheet">
-  <style>
-    .link-container {
-      display: flex;
-      align-items: center;
-      font-family: 'Josefin Sans', sans-serif;
-    }
-  </style>
-</head>
-<body>
-<div class="login-container1">
-  <h1>Fixly</h1>
-  <h3>Welcome back!</h3>
-  <div class="login-container2">
-    <div class="logo-container"></div>
-    <div class="login-container3">
-      <h2>Login</h2>
-      <formr action="/submit" method="post">
-        <div>
-          <input type="text" id="username" name="username" placeholder="Username" required>
+
+<body style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.96)), url('/assets/images/logo.jpeg'); background-size: cover; background-repeat: no-repeat; height: 100vh;">
+
+<div class="container d-flex justify-content-center align-items-center">
+  <div class="login-container1">
+    <h1>Fixly</h1>
+    <h3>Welcome back!</h3>
+    <div class="login-container2">
+      <div class="logo-container"></div>
+      <div class="login-container3">
+        <h2>Login</h2>
+        @* Container for the success message and form *@
+        <div class="form-container">
+          @* Display the flash message if it exists *@
+          @request.flash().get("success").map { successMessage =>
+          <div class="alert alert-success" role="alert" id="success-alert">
+            @successMessage
+          </div>
+          }
+
+          @form(routes.HomeController.handleLogin()) {
+          @CSRF.formField
+          <div>
+            <input type="email" id="email" name="email" placeholder="email" value="@loginForm("email").value">
+            @* Display the email validation error if it exists *@
+            @loginForm("email").error.map { error =>
+            }
+          </div>
+
+          <div>
+            <input type="password" id="password" name="password" placeholder="Password" value="@loginForm("password").value">
+            @* Display the password validation error if it exists *@
+            @loginForm("password").error.map { error =>
+            <div class="error">@error.message</div>
+            }
+          </div>
+          <div>
+            <button type="submit">Login</button>
+          </div>
+          }
         </div>
-        <div>
-          <input type="password" id="password" name="password" placeholder="Password" required>
-        </div>
-        <div>
-          <button type="submit">Login</button>
-        </div>
-      </formr>
+      </div>
     </div>
   </div>
-</div>
-<div class="link-container">
-  <p>Don't have an account?</p>
-  <a href="/register">Register</a>
-</div>
+
+  <div class="link-container">
+    <p>Don't have an account?</p>
+    <a href="/register">Login</a>
+  </div>
+
+  <script type="text/javascript">
+    window.onload = function() {
+        var successAlert = document.getElementById('success-alert');
+        if (successAlert) {
+            setTimeout(function() {
+                successAlert.style.display = 'none';
+            }, 10000); // 10000 milliseconds = 10 seconds
+        }
+    }
+  </script>
 </body>
-</html>
 }

@@ -30,7 +30,7 @@ background: linear-gradient(to bottom, rgba(255, 255, 255, 0.96), rgba(255, 255,
     width: 947px;
     height: 732px;
     left: 450px;
-    top: 192px;
+    top: 152px;
     background: #000066;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
@@ -115,6 +115,7 @@ background: url('/assets/images/logo.jpeg');
     position: absolute;
     width: 90px;
     height: 32px;
+    margin-top:-40px;
     margin-left: 0px;
     font-style: normal;
     font-family: 'Josefin Sans', sans-serif;
@@ -191,7 +192,7 @@ top:60px;
 }
 .link-container a{
 position:absolute;
-margin-top:-2px;
+margin-top:-40px;
 margin-left:178px;
 }
 .link-container2 {
@@ -211,15 +212,12 @@ margin-left:138px;
 
 
 form {
-  width: 426px;
-  height:441px;
   margin-left:0px;
-    padding-left:20px;
-  padding-top:190px;
+  padding-left:20px;
+  padding-top:150px;
   border: 1px solid #ccc;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
-
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 formm {
@@ -254,6 +252,19 @@ input[type="text"], input[type="password"] {
 }
 
 input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"], input[type="email"] {
+  width: 80%;
+  height: 45px;
+  margin-left:25px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
   border-color: #aaa;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -335,11 +346,429 @@ margin-left:280px;
 }
 
 .profile-circle img {
+   position:absolute;
     width: 30px;
     height: 30px;
-    margin-left:1700px;
+    margin-left:1450px;
+    margin-top:-45px;
     object-fit: cover; /* Ensure the image fits within the circle */
 }
+.login-container3r > form:nth-child(2){
+position:absolute;
+  width: 406px;
+  height:540px;
+}
+.login-container3r > form:nth-child(2) > div:nth-child(2){
+margin-top:-50px;}
+.login-container3r > form:nth-child(3){
+ width: 406px;
+  height:540px;}
+  /* Additional CSS */
+  .form-container {
+      position: absolute;
+          width:426px;
+          height:2px;
+          margin-top:-200px;
+  }
+
+  .alert {
+      position: absolute;
+      top: -50px; /* Adjust this value as needed to position the alert correctly */
+      left: 0;
+      width: 100%;
+      z-index: 10;
+  }
+
+  .alert-success {
+      background-color: #d4edda;
+      color: #155724;
+      border-color: #c3e6cb;
+      padding-left:70px;
+      font-family: 'Josefin Sans', sans-serif;
+      border-radius: 70px;
+  }
+.form-container > form:nth-child(1){
+position:absolute;
+  width: 406px;
+  height:480px;
+}
+.forrm-container > form:nth-child(1){
+ width:404px;
+ height:480px;
+ margin-top:-199px;
+}
+
+
+.form-container > form:nth-child(2){
+position:absolute;
+  width: 406px;
+  height:438px;
+}
+.linkk-container {
+position: absolute;
+width:360px;
+margin-left:1050px;
+margin-top:520px;
+font-family: 'Josefin Sans', sans-serif;
+top:60px;
+}
+.linkk-container a{
+position:absolute;
+margin-top:-40px;
+margin-left:178px;
+}
+
+.forrm-container > form:nth-child(1){
+position: absolute;
+    width:406px;
+    height:580px;
+    margin-top:0px;
+}
+.main-content > h1{
+position:relative;
+width:500px;
+margin-top:50px;
+font-family: 'Josefin Sans' , sans-serif;
+}
+body {
+    font-family: Josefin Sans, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sidebar-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.sidebar-menu li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-menu li i {
+    margin-right: 10px;
+}
+.navbar{
+width: 1900px;
+height: 40px;
+background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left:280px;
+}
+
+.navbar > h2:nth-child(1){
+margin-top: 5px;
+}
+
+ .profile-name{
+ position: absolute;
+ left:1800px;
+ top:32px;
+ }
+
+ .profile-card {
+ position:absolute;
+   width: 300px;
+   height:600px;
+   margin-top:50px;
+   margin-left:30px;
+   padding: 20px;
+   background: #fff;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+   text-align: center;
+ }
+
+ .profile-card img {
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+ }
+
+ .profile-card h2 {
+   font-size: 22px;
+   margin: 10px 0 5px;
+ }
+
+ .profile-card p {
+   font-size: 14px;
+   color: #777;
+   margin: 0;
+ }
+
+ .profile-card .stats {
+   margin: 20px 0;
+ }
+
+ .profile-card .stats div {
+   font-size: 18px;
+   margin: 10px 0;
+ }
+
+ .profile-card .stats .applied {
+   color: #ff6b6b;
+ }
+
+ .profile-card .stats .won {
+   color: #4caf50;
+ }
+
+ .profile-card button {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   border: none;
+   background: #007bff;
+   color: #fff;
+   border-radius: 5px;
+   cursor: pointer;
+   margin: 10px 0;
+ }
+
+ .profile-card a {
+   color: #007bff;
+   text-decoration: none;
+ }
+/* public/stylesheets/accountSettings.css */
+
+
+
+.form-container div {
+    margin-bottom: 10px;
+}
+.form-container {
+            width: 800px;
+            height:600px;
+            margin: 0 auto;
+            padding: 20px;
+              margin-top: 50px;
+              margin-left: 380px;
+              background: #fff;
+              border-radius: 10px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+              text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+        position:absolute;
+            width: 100px;
+            padding: 10px;
+            left:-15px;
+            top:380px;
+            background-color: #4C60AF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+        .form-container > formd:nth-child(1){
+        position:absolute;
+        width:400px;
+        height:220px;
+        margin-top:-20px;
+          margin-left:-420px;
+          padding-top:150px;
+          border: 1px solid #fff;
+          border-radius:15px;
+          box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);}
+
+           .formd-container > formm:nth-child(1){
+                  position:absolute;
+                  width:400px;
+                  height:220px;
+                  margin-top:-20px;
+                    margin-left:720px;
+                    padding-top:150px;
+                    border: 1px solid #fff;
+                    border-radius:15px;
+                    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);}
+
+
+
+         div.form-group:nth-child(1){
+         position:absolute;
+         top:40px;
+         left:-20px;}
+
+         #firstname{
+           position:absolute;
+                    top:5px;
+                    width:290px;
+                    height:30px;
+                    left:10px;
+                    color:#b3b0b0;
+                    border:1px solid;
+                    border-radius:5px;
+         }
+
+#lastname{
+  position:absolute;
+           top:125px;
+           width:290px;
+           height:28px;
+           left:15px;
+            color:#b3b0b0;
+           border:1px solid;
+           border-radius:5px;
+           }
+           div.form-group:nth-child(5) > label:nth-child(1){
+           position:absolute;
+           top:180px;
+           left:15px;
+
+           }
+           #city{
+            position:absolute;
+            width:300px;
+                      top:205px;
+                      left:15px;
+                      color:#b3b0b0;
+                      border:1px solid;
+                      border-radius:5px;
+
+           }
+              #occupation{
+                       position:absolute;
+                       width:300px;
+                                 top:-35px;
+                                 left:15px;
+                                 color:#b3b0b0;
+                                 border:1px solid;
+                                 border-radius:5px;
+
+                      }
+            #PhoneNumber{
+                       position:absolute;
+                       width:300px;
+                           color:#b3b0b0;
+                                 top:-15px;
+                                 left:10px;
+                                 border:1px solid;
+                                 border-radius:5px;
+
+                      }
+
+           .form-container > formd:nth-child(1) > label:nth-child(2){
+             position:absolute;
+                      top:100px;
+                      left:15px;
+
+           }
+
+          div.form-group:nth-child(3){
+         position:absolute;
+         top:210px;
+         left:15px;}
+
+          div.form-group:nth-child(4){
+                  position:absolute;
+                  top:310px;
+                  left:5px;
+                  border-radius:15px;}
+
+         div.form-group:nth-child(5) > button:nth-child(1){
+         position:absolute;
+         width:200px;
+         top:410px;
+         left:-20px;}
+
+         div.form-group:nth-child(1) > label:nth-child(1){
+         position:absolute;
+         left:30px;
+         top:-20px;}
+
+         div.form-group:nth-child(2) > label:nth-child(1){
+         position:absolute;
+         left:30px;
+         top:-20px}
+
+         div.form-group:nth-child(3) > label:nth-child(1){
+         position:absolute;
+         left:30px;
+         top:-20px;}
+
+         div.form-group:nth-child(4) > label:nth-child(1){
+                  position:absolute;
+                  left:15px;
+                  top:-40px;}
+
+         div.form-group:nth-child(4) > labell:nth-child(1){
+                  position:absolute;
+                  left:15px;
+                  top:-59px;}
+         .won{
+            position:absolute;
+            top:245px;
+            left:100px;
+         }
+         .applied{
+          position:absolute;
+          top:275px;
+                     left:100px;
+         }
+         .current{
+          position:absolute;
+                     top:305px;
+                     left:100px;
+         }
+         .profile-card .stats .applied {
+           color: #170c0c;
+         }
+         .profile-card .stats .won {
+           color: #170c0c;
+         }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
